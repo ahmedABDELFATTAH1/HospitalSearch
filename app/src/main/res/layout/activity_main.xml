@@ -4,20 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     android:orientation="vertical"
     tools:context=".ui.login.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mmashfy1" />
 
     <TextView
         android:id="@+id/textView3"
         style="@android:style/Widget.DeviceDefault.TextView.SpinnerItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="We connect the patient with the hospital during COVID-19 pendimec"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="you are a patient or hospital ?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#6592CA"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal">
 
         <Button
@@ -25,25 +38,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            android:text="Hospital" />
+            android:background="@drawable/button_background"
+            android:text="Hospital"
+            android:textColor="#2539EF"
+            android:textColorHint="#CD1F1F" />
 
         <Button
             android:id="@+id/patientButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp"
             android:layout_weight="1"
+            android:background="@drawable/button_background"
             android:text="Patient "
-            android:textColorHighlight="#C5144C"
+            android:textColor="#2539EF"
+            android:textColorHighlight="#1C41FF"
             android:textColorLink="#A9FF0000" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/stayhome" />
 
 </LinearLayout>
